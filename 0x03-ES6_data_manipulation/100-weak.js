@@ -1,6 +1,6 @@
 export const weakMap = new WeakMap();
 export function queryAPI(endpoint) {
-  if (typeof endpoint !== 'object' || endpoint === null) return undefined;
+//  if (typeof endpoint !== 'object' || endpoint === null) return undefined;
   
   if (!weakMap.has(endpoint)) weakMap.set(endpoint, 0)
   const count = weakMap.get(endpoint);
