@@ -39,6 +39,15 @@ describe('index get', () => {
         })
     });
 
+    it('tests the return value', (done) => {
+        request.get('http://localhost:7865/cart/23', (error, response, body) => {
+            expect(response.body).to.equal("Payment methods for cart 23");
+            done();
+        })
+    });
+
+
+
 
 
     
