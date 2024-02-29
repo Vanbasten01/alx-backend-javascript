@@ -22,6 +22,6 @@ describe('CalculateNumber', () => {
         assert.strictEqual(calculateNumber("DIVIDE", -8.4, -2), 4);
     })
     it('assert that when we dividea number by 0 it raises an err', () => {
-        assert.strictEqual(calculateNumber("DIVIDE", 10, 0), Infinity)
+        assert.strictEqual(calculateNumber("DIVIDE", 10, 0), "Error")
     });
 })
