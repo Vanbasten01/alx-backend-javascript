@@ -1,17 +1,15 @@
-
 const { expect } = require('chai');
 const calculateNumber = require('./2-calcul_chai');
-
 
 describe('CalculateNumber', () => {
     it('expects the sum, divide, and subtract of two rounded numbers', () => {
         expect(calculateNumber("SUBTRACT", 13.62, 1.5)).to.equal(12);
         expect(calculateNumber('SUM', 1.4, 2.5)).to.equal(4);
-        expect(calculateNumber("DIVIDE", 13.62, 1.5)).to.equal(9);
+        expect(calculateNumber("DIVIDE", 13.62, 1.5)).to.equal(7);
     });
 
     it('expects the sum, divide, and subtract of two rounded negative numbers', () => {
-        expect(calculateNumber("SUM", -1.4, -2.5)).to.equal(-4);
+        expect(calculateNumber("SUM", -1.4, -2.5)).to.equal(-3);
         expect(calculateNumber("DIVIDE", -4, -2)).to.equal(2);
         expect(calculateNumber("SUBTRACT", -2.5, -0.5)).to.equal(-2);
     });
